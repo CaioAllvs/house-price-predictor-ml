@@ -22,6 +22,13 @@ The model takes into account:
 * Number of Bathrooms
 * Parking Spaces
 
+
+## 📊 Data Insights
+What drives rental prices in São Paulo? According to the model, **Size ($m^2$)** is the most dominant factor.
+
+![Feature Importance](grafico_importancia.png)
+
+
 ## 🚀 How to Run Locally
 
 1.  **Clone the repository:**
