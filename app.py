@@ -40,4 +40,3 @@ if st.button("💰 Estimate Rent"):
     
     # Display result
     st.success(f"Estimated Monthly Rent: **R$ {prediction:,.2f}**")
-    
