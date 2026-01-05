@@ -15,6 +15,14 @@ This project moved from a simple linear regression prototype to a robust **Rando
 * **Interactive App:** Built with **Streamlit** for real-time predictions.
 * **Data Cleaning:** Implements strict filtering logic to remove outliers (e.g., inconsistent square footage or unrealistic prices).
 
+## 🧠 Model Decision: Why Random Forest?
+
+During the development, I initially considered **Linear Regression** (standard for introductory courses). However, real-world real estate data is chaotic and non-linear. I chose **Random Forest** for three main reasons:
+
+1.  **Handling Non-Linearity:** Property prices don't always follow a straight line (e.g., a 200m² apartment isn't necessarily double the price of a 100m² one due to location and luxury factors). Random Forest captures these complex curves better than a simple linear line.
+2.  **Robustness to Outliers:** The dataset contains luxury properties with very high rents. Linear Regression tries to "fit" these extreme values, often ruining the accuracy for regular apartments. Random Forest isolates these outliers, keeping the prediction stable for the majority of users.
+3.  **Higher Accuracy:** In comparative tests, the Decision Tree ensemble (Random Forest) significantly outperformed Linear Regression in $R^2$ score for this specific dataset.
+
 ## 📊 Model Performance
 The model takes into account:
 * Size ($m^2$)
