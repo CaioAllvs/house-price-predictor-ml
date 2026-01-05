@@ -1,41 +1,52 @@
-# 🏠 House Price Predictor (ML Study Project)
+# 🏠 Real Estate Price Predictor (Brazil)
+
+A Machine Learning web application to predict rental prices in São Paulo, Brazil, using real estate market data.
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
 ![Status](https://img.shields.io/badge/Status-Educational-orange)
 
-## 📋 About the Project
+## 🧠 About the Project
+This project moved from a simple linear regression prototype to a robust **Random Forest** model trained on real-world data.
 
-This is an educational project designed to demonstrate **Machine Learning** concepts applied with **Python**. It consists of a web application where users can input property features (size, bedrooms, location) to get a price estimate.
+**Key Features:**
+* **Real Dataset:** Trained on the [Brazilian Houses to Rent Dataset](https://www.kaggle.com/datasets/rubenssjr/brasilian-houses-to-rent) (Kaggle), specifically filtered for São Paulo.
+* **Algorithm:** Uses **Random Forest Regressor** to handle non-linear relationships and outliers.
+* **Interactive App:** Built with **Streamlit** for real-time predictions.
+* **Data Cleaning:** Implements strict filtering logic to remove outliers (e.g., inconsistent square footage or unrealistic prices).
 
-> **⚠️ IMPORTANT DISCLAIMER:**
-> This project uses **Mock Data** (synthetic data) generated programmatically for study and visualization purposes. The predictions are based on mathematical logic trained on this synthetic dataset and **do not reflect real-world market prices**.
->
-> *The goal is to showcase code structure, pipeline implementation, and library usage (Scikit-Learn, Pandas, Streamlit).*
-
-## 🛠 Technologies & Skills
-
-* **Python**: Logic and data manipulation.
-* **Scikit-Learn**:
-    * **Random Forest Regressor**: Selected algorithm to handle non-linear patterns.
-    * **Pipelines**: To encapsulate pre-processing (OneHotEncoding).
-* **Streamlit**: For rapid frontend prototyping.
-* **Pandas**: Data engineering.
+## 📊 Model Performance
+The model takes into account:
+* Size ($m^2$)
+* Number of Bedrooms
+* Number of Bathrooms
+* Parking Spaces
 
 ## 🚀 How to Run Locally
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/SEU-USUARIO/house-price-predictor-ml.git](https://github.com/SEU-USUARIO/house-price-predictor-ml.git)
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/CaioAllvs/house-price-predictor-ml.git](https://github.com/CaioAllvs/house-price-predictor-ml.git)
+    ```
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Train the Model (Optional):**
+    *If you want to retrain with the latest data:*
+    ```bash
+    python train_model.py
+    ```
+4.  **Run the App:**
+    ```bash
+    streamlit run app.py
+    ```
 
-2. **Install dependencies:**
-pip install -r requirements.txt
+## 🛠 Snacks
+* Python
+* Pandas (Data Engineering)
+* Scikit-Learn (Machine Learning)
+* Streamlit (Web Framework)
 
-3. **Train the Model: Run the training script to generate the .pkl file locally.**
-  python train_model.py 
-
-4. **Run the App:**
-streamlit run app.py
-
--------------------------------------------------
-Developed by Caio Alves as part of a Machine Learning Portfolio.
+---
+Developed by Caio Alves
