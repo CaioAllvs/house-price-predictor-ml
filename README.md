@@ -42,7 +42,7 @@ The model takes into account:
     streamlit run app.py
     ```
 
-## 🛠 Snacks
+## 🛠 Stack
 * Python
 * Pandas (Data Engineering)
 * Scikit-Learn (Machine Learning)
